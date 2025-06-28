@@ -1,6 +1,6 @@
 import indexData from './pages/home';
 import galeriaData from './pages/galeria';
-import equiposData from './pages/equipos';
+import equiposData from './pages/equiposData';
 
 function context(page){
     console.log("Getting context for: " + page);

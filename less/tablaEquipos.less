@@ -1,0 +1,39 @@
+@import "variables.less";
+
+.tabla-equipos {
+  padding: @unit5;
+
+  h2 {
+    text-align: center;
+    margin-bottom: @unit4;
+    color: @primary-background-color;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    .shadow();
+
+    thead {
+      background-color: @primary-background-color;
+      color: #fff;
+    }
+
+    th,
+    td {
+      padding: @unit3;
+      text-align: center;
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background-color: lighten(@primary-background-color, 45%);
+      }
+      tr:hover {
+        background-color: lighten(@primary-background-color, 35%);
+        cursor: default;
+      }
+    }
+  }
+}

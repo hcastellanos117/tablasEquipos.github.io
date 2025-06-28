@@ -3,25 +3,31 @@
   <table>
     <thead>
       <tr>
-        <th>Nombre del Equipo</th>
-        <th>Partidos Jugados</th>
-        <th>Partidos Ganados</th>
-        <th>Partidos Empatados</th>
-        <th>Goles a Favor</th>
-        <th>Goles en Contra</th>
         <th>Posición</th>
+        <th>Equipo</th>
+        <th>PJ</th>
+        <th>PG</th>
+        <th>PE</th>
+        <th>PP</th>
+        <th>GF</th>
+        <th>GC</th>
+        <th>DIF</th>
+        <th>Pts</th>
       </tr>
     </thead>
     <tbody>
       {{#each equipos}}
         <tr>
+          <td>{{posicion}}</td>
           <td>{{nombre}}</td>
           <td>{{jugados}}</td>
           <td>{{ganados}}</td>
           <td>{{empatados}}</td>
+          <td>{{perdidos}}</td>
           <td>{{golesFavor}}</td>
           <td>{{golesContra}}</td>
-          <td>{{posicion}}</td>
+          <td>{{dif}}</td>
+          <td>{{puntos}}</td>
         </tr>
       {{/each}}
     </tbody>
